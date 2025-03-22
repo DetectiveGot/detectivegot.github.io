@@ -18,7 +18,7 @@ async function loadWordList(){
 document.addEventListener("DOMContentLoaded", async function(){
     const charBtn = document.querySelectorAll(".character-button");
     const roundId = document.querySelector("#round-id");
-    const tryId = document.querySelector("#try-left-id");
+    const lifeId = document.querySelector("#try-left-id");
     const ScoreId = document.querySelector("#user-score");
     const wordContainer = document.querySelector(".word-container");
     const startBtn = document.querySelector("#start-btn");
@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", async function(){
     scoreBoard.style.visibility = "hidden";
 
     let answer = "a".toLowerCase();
-    let tryLeft = 5;
+    let lifeLeft = 5;
+    let maxLife = 5;
     let letterLeft = 0;
     let wordAr = answer.split(' ');
     wordContainer.innerHTML = "";
@@ -70,14 +71,14 @@ document.addEventListener("DOMContentLoaded", async function(){
         curScore = 0;
         roundCount = 1;
         gameStarted = false;
-        tryLeft = 5;
+        lifeLeft = 5;
         letterLeft = 0;
         usedCharacter.fill(false);
     
         // Reset UI
         ScoreId.textContent = curScore;
         roundId.textContent = roundCount;
-        tryId.textContent = tryLeft;
+        lifeId.textContent = lifeLeft;
         wordContainer.innerHTML = "";
         // continueBtn.style.display = "none";
         continueBtn.style.visibility = "hidden";
@@ -131,11 +132,11 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     //when play input wrong character
     function wrong_character(){
-        --tryLeft;        
-        if(tryLeft<=0){
+        --lifeLeft;        
+        if(lifeLeft<=0){
             loseGame();
         }
-        tryId.textContent = tryLeft;
+        lifeId.textContent = lifeLeft;
     }
     
     //when you win
@@ -186,7 +187,7 @@ document.addEventListener("DOMContentLoaded", async function(){
         //
         gameStarted = true;
         letterLeft = 0;
-        tryLeft = 5;
+        lifeLeft = maxLife;
         wordAr = answer.split(' ');
         wordContainer.innerHTML = "";
         usedCharacter = new Array(26).fill(false);
@@ -213,6 +214,7 @@ document.addEventListener("DOMContentLoaded", async function(){
             button.disabled = false;
         })
         roundId.textContent = roundCount;
+        lifeId.textContent = maxLife;
         // continueBtn.style.display = "none";
         continueBtn.style.visibility = "hidden";
     }
