@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex class */
+.flex-box {
+    display: flex;
+    gap: 5px;
+}
+
+
+/* Spacing */
+.spacing {
+    margin: 8px;
+}
+
+/* .margin-v-spacing {
+    margin: 50px auto;
+} */
+
+/* Section */
+
+.section {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.container {
+    display: flex;
+    margin: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 80%;
+    background-color: rgb(202, 150, 150);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+/* Type section */
+
+.definition-list {
+    padding: 8px 32px; 
+}
+
+/* Text title */
+.text-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Round number */
+.round-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav section */
+.nav-bar {
+    /* height: 100px; */
+    width: 100%;
+    border-bottom: 1px solid rgba(164, 160, 160, 0.5);
+    /* position: fixed;
+    top: 0; */
+}
+
+.nav-title {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 16px;
+}
+
+/* Guessing Part */
+.guessing-section {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter-container {
+    display: flex;
+    margin: 2px;
+    /* border: 2px dashed rgba(164, 160, 160, 1); */
+    /* height: 32px;
+    width: 32px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.word > p {
+    font-size: 52px;
+    font-weight: 600;
+    margin: 3px;
+}
+
+.word-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.word {
+    display: flex;
+    margin: 8px;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(164, 160, 160, 0.5);
+}
+
+/* .try-section {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.try-title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+/* user input */
+.character-button {
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 3px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start page */
+#start-page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 219, 156);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* margin: 10px; */
+}
+
+#start-title {
+    font-size: 56px;
+    font-weight: 600;
+    /* margin: 10px; */
+}
+
+.start-page-btn {
+    border-radius: 8px;
+    border: 0px;
+    height: 6vh;
+    width: 20vh;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}
+
+/* Instruction page */
+.instruction-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 💡 Perfectly center it */
+
+    background: rgb(255, 219, 156);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000000;
+
+    width: 400px;  /* or any size you prefer */
+    max-width: 90%;
+}
+
+#instruction-close-btn {
+    position: absolute;
+    border-radius: 8px;
+    border: 0;
+    height: 30px;
+    width: 30px;
+    right: 10%;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: underline;
+}
+
+.ingame-btn {
+    border-radius: 8px;
+    border: 0px;
+    height: 6vh;
+    width: 20vh;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}
+
+#score-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10000000;
+    background-color: rgb(255, 219, 156)
+}
+
+.scoreboard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 💡 Perfectly center it */
+
+    background: rgba(255, 219, 156, 1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000000;
+
+    width: 400px;  /* or any size you prefer */
+    max-width: 90%;
+}
