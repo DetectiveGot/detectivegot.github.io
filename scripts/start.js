@@ -219,6 +219,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     charBtn.forEach(button => {
         button.addEventListener("click", function(){
+            if(!gameStarted) return;
             this.disabled = true;
             const letter = this.textContent.toLowerCase();
             usedCharacter[letter.charCodeAt(0)-97] = true;
