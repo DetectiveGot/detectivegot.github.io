@@ -4,28 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
+        <!-- I use animte.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <title>guess the vocab</title>
     </head>
     <body>
         <!-- Your Score -->
         <section id="scoreboard">
-            <div id="score-container">
-                <div class="scoreboard-content">
-                    <h1>Congratutions!</h1>
-                    <p id="score-message">You got 10/10</p>
-                </div>
+            <div id="score-container"></div>
+            <div class="scoreboard-content">
+                <h1>Congratutions!</h1>
+                <p id="score-message">You got 10/10</p>
             </div>
         </section>
         <!-- Start page -->
         <section id="start-page">
             <div class="start-content">
-                <h1 id="start-title">Welcome to Guess the Vocab!</h1>
-                <button id="start-btn" class="start-page-btn">Start</button>
-                <button id="instruction-btn" class="start-page-btn">How to play</button>
-                <button id="vocab-list-btn" class="start-page-btn">See all vocabs</button>
+                <h1 id="start-title">Guess the Vocab!</h1>
+                <button id="start-btn" class="start-page-btn button-hover-effect">Start</button>
+                <button id="instruction-btn" class="start-page-btn button-hover-effect">How to play</button>
+                <button id="vocab-list-btn" class="start-page-btn button-hover-effect">See all vocabs</button>
             </div>
         </section>
-
+        <!-- Vocab lists -->
+        <section id="vocab-list-page">
+            <div id="vocab-list-container"></div>
+            <div id="vocab-list-content">
+                <h1>Vocab List</h1>
+                <div>
+                    <ol id="vocab-ol">
+                    </ol>
+                </div>
+            </div>
+        </section>
         <!-- Instrunction page -->
         <section id="instruction-page">
             <div class="instruction-content">
@@ -35,50 +46,50 @@
                     <li class="play-instruction-item">You will be given 5 tries to guess the alphabets.</li>
                     <li class="play-instruction-item">Each time you guess wrong, your tries will decrease by 1.</li>
                     <li class="play-instruction-item">You have to guess all the letters correctly to gain a point.</li>
-                    <li class="play-instruction-item">Each word will be from the given vocab list</li>
+                    <li class="play-instruction-item">Each word will be from the given vocab list.</li>
                 </ol>
-                <button id="instruction-close-btn">Close</button>
+                <button id="instruction-close-btn" class="button-hover-effect">Close</button>
             </div>
         </section>
         
         <!-- game page -->
         <main id="game-page">
             <!-- nav bar -->
-            <nav class="nav-bar">
-                <div class="nav-title">
-                    Guess The Vocab
+            <nav id="nav-bar">
+                <div id="nav-title-box" class="button-hover-effect">
+                    <h1 id="nav-title">Guess The Vocab</h1>
                 </div>
             </nav>
             <!-- Round number -->
             <section class="section">
                 <div class="container round-info">
                     <div>
-                        <span class="text-title">Round:</span>
-                        <span class="text-title " id = "round-id">1</span>
+                        <span class="text-title game-text-info">Round:</span>
+                        <span class="text-title game-text-info" id = "round-id">1</span>
                     </div>
                     <div>
-                        <span class="text-title">Score: </span>
-                        <span class="text-title" id = "user-score">0</span>
+                        <span class="text-title game-text-info">Score: </span>
+                        <span class="text-title game-text-info" id = "user-score">0</span>
                     </div>
                 </div>
                 
             </section>
-            <!-- Definition -->
+            <!-- Vocab Info -->
             <section class="section">
                 <div class="container">
                     <div class="box">
                         <div>
-                            <div id="word-type-box" class="flex-box">
-                                <h3>Type: </h3>
-                                <h3 id="word-type">Word</h3>
+                            <div id="word-type-box" class="flex-box game-text-info">
+                                <p class="info-text"><b>Type: </b></p>
+                                <p id="word-type" class="info-text">Word</p>
                             </div>
-                            <div id="definition-box" class="flex-box">
-                                <h3>Definition: </h3>
-                                <h3 id="word-def">a loud complaint or demand</h3>
+                            <div id="definition-box" class="flex-box game-text-info">
+                                <p class="info-text"><b>Definition: </b></p>
+                                <p id="word-def" class="info-text">a loud complaint or demand</p>
                             </div>
-                            <div id="description-box" class="flex-box">
-                                <h3>Description: </h3>
-                                <h3 id="word-desc">asdfadsfasdfdsf</h3>
+                            <div id="description-box" class="flex-box game-text-info">
+                                <p class="info-text"><b>Description: </b></p>
+                                <p id="word-desc" class="info-text">asdfadsfasdfdsf</p>
                             </div>
                         </div>
                     </div>
@@ -100,7 +111,7 @@
             <!-- Next round -->
             <section class="section">
                 <div class="container">
-                    <button class="ingame-btn spacing" id="game-continue-btn">Next</button>
+                    <button class="ingame-btn button-hover-effect" id="game-continue-btn">Next</button>
                     <!-- <button class="ingame-btn spacing" id="game-to-menu">To Menu</button> -->
                 </div>
             </section>
@@ -158,6 +169,6 @@
         </main>
 
         <!-- scripts -->
-        <script src="./scripts/start.js"></script>
+        <script type="module" src="./scripts/start.js"></script>
     </body>
 </html>

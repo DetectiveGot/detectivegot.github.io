@@ -1,7 +1,59 @@
+:root {
+    --textsize: 16px;
+    --titlesize: 24px;
+    --headertitlesize: 36px;
+    --buttonfontsize: clamp(1vw, 40px, 40px);
+    --buttonsize: 50px;
+    --guessbuttonsize: min(50px, 5vw);
+    --guessbuttonfontsize: min(24px, 5vw);
+    --startbuttonsize: 200px;
+    --startbuttonfontsize: 16px;
+    --infocontainer: max(400px, 40vw);
+    --infofontsize: min(16px, 4vw);
+    --answerfontsize: min(32px, 8vw);
+    --elementMargin: min(24px, 8vw);
+    --vocabfontsize: min(16px, 3.5vw);
+    --vocabcontentpadding: min(50px, 5vw);
+    --vocabcontentsize: 600px;
+    /* --instclosebtn: ;
+    --instcontentfontsize: ; */
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+.instruction-content * {
+    font-size: var(--vocabfontsize);
+}
+
+#vocab-list-content * {
+    font-size: var(--vocabfontsize);
+}
+
+.info-text {
+    font-size: var(--infofontsize);
+}
+
+.game-text-info {
+    font-size: var(--infofontsize);
+}
+
+.ingame-btn {
+    border-radius: 8px;
+    border: 0px;
+    height: auto;
+    width: var(--startbuttonsize);
+    font-size: var(--titlesize);
+    background-color: black;
+    color: white;
+}
+
+/* html {
+    font-size: clamp(14px, 1.5vw, 18px);
+} */
 
 /* Flex class */
 .flex-box {
@@ -9,32 +61,22 @@
     gap: 5px;
 }
 
-
-/* Spacing */
-.spacing {
-    margin: 8px;
-}
-
-/* .margin-v-spacing {
-    margin: 50px auto;
-} */
-
 /* Section */
 
 .section {
-    width: 100%;
-    margin: 50px auto;
+    width: 100vw;
+    /* margin: 50px auto; */
 }
 
 .container {
     display: flex;
-    margin: 32px;
+    margin: var(--elementMargin);
     justify-content: center;
     align-items: center;
 }
 
 .box {
-    width: 80%;
+    width: var(--infocontainer);
     background-color: rgb(202, 150, 150);
     border-radius: 8px;
     padding: 32px;
@@ -48,7 +90,7 @@
 
 /* Text title */
 .text-title {
-    font-size: 24px;
+    font-size: var(--textsize);
     font-weight: 600;
 }
 
@@ -59,16 +101,20 @@
 }
 
 /* nav section */
-.nav-bar {
+#nav-bar {
     /* height: 100px; */
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid rgba(164, 160, 160, 0.5);
     /* position: fixed;
     top: 0; */
 }
 
-.nav-title {
-    font-size: 32px;
+#nav-title-box {
+    width: fit-content;
+}
+
+#nav-title {
+    font-size: var(--titlesize);
     font-weight: 600;
     padding: 16px;
 }
@@ -76,7 +122,7 @@
 /* Guessing Part */
 .guessing-section {
     display: flex;
-    margin: 50px auto;
+    margin: var(--elementMargin) auto;
     justify-content: center;
     align-items: center;
 }
@@ -92,7 +138,7 @@
 }
 
 .word > p {
-    font-size: 52px;
+    font-size: var(--answerfontsize);
     font-weight: 600;
     margin: 3px;
 }
@@ -108,8 +154,8 @@
 }
 
 .image-container {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
     background-color: rgba(164, 160, 160, 0.5);
 }
 
@@ -118,16 +164,14 @@
     justify-content: space-evenly;
 } */
 
-.try-title {
-    font-size: 48px;
-    font-weight: 600;
-}
-
 /* user input */
 .character-button {
-    height: 50px;
-    width: 50px;
-    font-size: 24px;
+    /* height: 50px;
+    width: 50px; */
+    width: var(--guessbuttonsize);
+    height: auto;
+    aspect-ratio: 1/1;
+    font-size: var(--guessbuttonfontsize);
     font-weight: 600;
     margin: 3px;
     border: 0;
@@ -163,7 +207,7 @@
 }
 
 #start-title {
-    font-size: 56px;
+    font-size: var(--headertitlesize);
     font-weight: 600;
     /* margin: 10px; */
 }
@@ -171,63 +215,64 @@
 .start-page-btn {
     border-radius: 8px;
     border: 0px;
-    height: 6vh;
-    width: 20vh;
-    font-size: 24px;
+    width: var(--startbuttonsize);
+    height: auto;
+    padding: 12px;
+    font-size: var(--startbuttonfontsize);
     background-color: black;
     color: white;
 }
 
 /* Instruction page */
+#instruction-page {
+    z-index: 1000000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+}
+
 .instruction-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
+    
     transform: translate(-50%, -50%); /* 💡 Perfectly center it */
 
     background: rgb(255, 219, 156);
-    padding: 30px;
+    padding: var(--vocabcontentpadding);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1000000;
 
-    width: 400px;  /* or any size you prefer */
-    max-width: 90%;
+    width: var(--vocabcontentsize);
+    max-width: 70vw;
+    max-height: 50vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #instruction-close-btn {
     position: absolute;
     border-radius: 8px;
     border: 0;
-    height: 30px;
-    width: 30px;
     right: 10%;
     top: 10%;
     background-color: rgba(255, 255, 255, 0);
     text-decoration: underline;
 }
 
-.ingame-btn {
-    border-radius: 8px;
-    border: 0px;
-    height: 6vh;
-    width: 20vh;
-    font-size: 24px;
-    background-color: black;
-    color: white;
+#scoreboard {
+    position: fixed;
+    z-index: 10000000;
 }
 
 #score-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 10000000;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(255, 219, 156)
 }
 
@@ -247,8 +292,55 @@
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1000000;
 
     width: 400px;  /* or any size you prefer */
-    max-width: 90%;
+    max-width: 90vw;
+}
+
+/* vocab lists */
+#vocab-list-page {
+    position: fixed;
+    z-index: 1000000;
+}
+
+#vocab-list-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 219, 156);
+}
+
+#vocab-list-content {
+    display: flex;
+
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 💡 Perfectly center it */
+
+    background: rgba(255, 219, 156, 1);
+    padding: var(--vocabcontentpadding);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    width: var(--vocabcontentsize);
+    max-width: 90vw;
+    max-height: 80vh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#vocab-list-content::-webkit-scrollbar {
+    /* Note!! only works for Chrome, Safari, Edge */
+    display: none; 
+}
+
+.button-hover-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-hover-effect:hover {
+    transform: scale(1.05);
 }

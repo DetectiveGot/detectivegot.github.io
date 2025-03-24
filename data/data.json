@@ -2,403 +2,604 @@
   {
     "word": "mediocre",
     "type": "word",
-    "definition": "of only average quality; not very good",
-    "description": "Used to describe something that is neither very good nor very bad"
+    "definition": {
+      "EN": "Of only average quality; not very good.",
+      "TH": "ปานกลาง, ธรรมดา"
+    },
+    "description": "Used to describe something that is not especially good or bad, often with slight disapproval."
   },
   {
     "word": "adequate",
     "type": "word",
-    "definition": "satisfactory or acceptable in quality or quantity",
-    "description": "Implies sufficiency without being outstanding"
+    "definition": {
+      "EN": "Acceptable in quality or quantity.",
+      "TH": "เพียงพอ, พอใช้ได้"
+    },
+    "description": "Used when something meets a basic standard or requirement."
   },
   {
     "word": "stark",
     "type": "word",
-    "definition": "severe or bare in appearance or outline",
-    "description": "Often used to describe contrast or harsh realities"
+    "definition": {
+      "EN": "Severe, clear, or complete in appearance or effect.",
+      "TH": "เด่นชัด, รุนแรง, สิ้นเชิง"
+    },
+    "description": "Often used when describing strong contrasts or harsh situations."
   },
   {
     "word": "smarty pants",
     "type": "idiom",
-    "definition": "a person who displays intelligence in an annoying way",
-    "description": "Used playfully or sarcastically to describe someone acting overly clever"
+    "definition": {
+      "EN": "Someone who shows off their intelligence in an irritating way.",
+      "TH": "คนอวดฉลาด"
+    },
+    "description": "Used humorously or critically to refer to a know-it-all."
   },
   {
     "word": "analogy",
     "type": "word",
-    "definition": "a comparison between two things for the purpose of explanation",
-    "description": "Used to make something easier to understand by comparing it to something familiar"
+    "definition": {
+      "EN": "A comparison made to explain something unfamiliar.",
+      "TH": "การเปรียบเทียบเพื่ออธิบาย"
+    },
+    "description": "Used to simplify complex ideas by relating them to familiar concepts."
   },
   {
     "word": "consensus",
     "type": "word",
-    "definition": "general agreement among a group",
-    "description": "Commonly used in discussions, meetings, or politics"
+    "definition": {
+      "EN": "A general agreement among a group.",
+      "TH": "ความเห็นพ้องต้องกัน"
+    },
+    "description": "Used in decision-making contexts where mutual agreement is reached."
   },
   {
     "word": "pretentious",
     "type": "word",
-    "definition": "attempting to impress by affecting greater importance or merit",
-    "description": "Often used negatively to describe people or things that seem overly showy or fake"
+    "definition": {
+      "EN": "Trying to appear more important or knowledgeable than one is.",
+      "TH": "เสแสร้ง, อวดดี"
+    },
+    "description": "Used negatively to describe people or things that seem fake or showy."
   },
   {
     "word": "cicadas",
     "type": "word",
-    "definition": "large insects known for their loud, buzzing song",
-    "description": "Often heard in the summer, especially in warm climates"
+    "definition": {
+      "EN": "Insects known for their loud buzzing sound, especially in summer.",
+      "TH": "จักจั่น"
+    },
+    "description": "Mentioned in the context of hot weather or nature sounds."
   },
   {
     "word": "bashfulness",
     "type": "word",
-    "definition": "reluctance to draw attention to oneself; shyness",
-    "description": "Describes a reserved or timid demeanor"
+    "definition": {
+      "EN": "Shyness or reluctance to attract attention.",
+      "TH": "ความขี้อาย"
+    },
+    "description": "Describes a person who is timid or lacks confidence in social settings."
   },
   {
     "word": "sweltering",
     "type": "word",
-    "definition": "uncomfortably hot",
-    "description": "Typically describes extreme heat and humidity"
+    "definition": {
+      "EN": "Uncomfortably hot.",
+      "TH": "ร้อนอบอ้าว"
+    },
+    "description": "Used to describe oppressive heat or extremely warm weather."
   },
   {
     "word": "dire",
     "type": "word",
-    "definition": "extremely serious or urgent",
-    "description": "Used to emphasize severity or danger"
+    "definition": {
+      "EN": "Extremely serious or urgent.",
+      "TH": "ร้ายแรง, ฉุกเฉิน"
+    },
+    "description": "Used to describe situations with severe consequences or emergencies."
   },
   {
     "word": "painstakingly",
     "type": "word",
-    "definition": "with great care and thoroughness",
-    "description": "Implies meticulous attention to detail"
+    "definition": {
+      "EN": "With great care and thoroughness.",
+      "TH": "อย่างละเอียดถี่ถ้วน"
+    },
+    "description": "Used to describe tasks done with extreme attention to detail."
   },
   {
     "word": "laudable",
     "type": "word",
-    "definition": "deserving praise and commendation",
-    "description": "Used to describe admirable actions or goals"
+    "definition": {
+      "EN": "Deserving praise and commendation.",
+      "TH": "น่าสรรเสริญ"
+    },
+    "description": "Used to describe actions or goals that are admirable."
   },
   {
     "word": "alley",
     "type": "word",
-    "definition": "a narrow passageway between buildings",
-    "description": "Often found in cities or urban areas"
+    "definition": {
+      "EN": "A narrow passage between or behind buildings.",
+      "TH": "ตรอก, ซอย"
+    },
+    "description": "Common in urban settings, especially for small roads or walkways."
   },
   {
     "word": "out of sheer habit",
     "type": "idiom",
-    "definition": "done because it is a habit, not because of thought or intention",
-    "description": "Describes actions performed automatically or routinely"
+    "definition": {
+      "EN": "Doing something automatically due to routine.",
+      "TH": "ทำไปโดยความเคยชิน"
+    },
+    "description": "Used when an action happens unconsciously because it’s a habit."
   },
   {
     "word": "aisle",
     "type": "word",
-    "definition": "a passage between rows of seats or shelves",
-    "description": "Common in stores, airplanes, and theaters"
+    "definition": {
+      "EN": "A passage between rows of seats or shelves.",
+      "TH": "ทางเดินระหว่างที่นั่งหรือชั้นวาง"
+    },
+    "description": "Used in planes, theaters, churches, and supermarkets."
   },
   {
     "word": "senile",
     "type": "word",
-    "definition": "showing a decline in mental faculties due to old age",
-    "description": "Typically used to describe memory loss or confusion in the elderly"
+    "definition": {
+      "EN": "Having or showing the weaknesses of old age, especially mental decline.",
+      "TH": "ชราภาพ, ความจำเสื่อม"
+    },
+    "description": "Used to describe elderly individuals with memory or cognitive issues."
   },
   {
     "word": "codger",
     "type": "word",
-    "definition": "an old man, often eccentric",
-    "description": "Usually affectionate or humorous in tone"
+    "definition": {
+      "EN": "An old man, often eccentric or grumpy.",
+      "TH": "ชายชรา (แปลกหรือบ่นบ่อย)"
+    },
+    "description": "Used humorously or affectionately to describe an older man."
   },
   {
     "word": "take something with a grain of salt",
     "type": "idiom",
-    "definition": "to view something with skepticism or doubt",
-    "description": "Suggests not taking something too literally or seriously"
+    "definition": {
+      "EN": "To view something with skepticism.",
+      "TH": "ฟังหูไว้หู"
+    },
+    "description": "Used when advising not to take a statement too seriously."
   },
   {
     "word": "impending",
     "type": "word",
-    "definition": "about to happen",
-    "description": "Usually used to describe something negative or ominous"
+    "definition": {
+      "EN": "About to happen, usually something negative.",
+      "TH": "ใกล้จะเกิดขึ้น"
+    },
+    "description": "Used when something unpleasant is expected soon."
   },
   {
     "word": "indulging",
     "type": "word",
-    "definition": "allowing oneself to enjoy pleasures",
-    "description": "Often used in the context of food, hobbies, or luxuries"
+    "definition": {
+      "EN": "Allowing oneself to enjoy the pleasure of something.",
+      "TH": "ตามใจ, หมกมุ่น"
+    },
+    "description": "Used when someone freely enjoys a desire, like food or entertainment."
   },
   {
     "word": "horrendous",
     "type": "word",
-    "definition": "extremely unpleasant or bad",
-    "description": "Describes something horrifying or dreadful"
+    "definition": {
+      "EN": "Extremely unpleasant or horrifying.",
+      "TH": "น่ากลัว, เลวร้าย"
+    },
+    "description": "Used to describe something shockingly bad or dreadful."
   },
   {
     "word": "hideous",
     "type": "word",
-    "definition": "ugly or disgusting to look at",
-    "description": "Can also describe something morally repugnant"
+    "definition": {
+      "EN": "Extremely ugly or disgusting.",
+      "TH": "น่าเกลียดมาก, น่าขยะแขยง"
+    },
+    "description": "Used to describe something visually or morally offensive."
   },
   {
     "word": "oppressive",
     "type": "word",
-    "definition": "weighing heavily on the mind or spirit",
-    "description": "Can refer to physical heat, political regimes, or emotional states"
+    "definition": {
+      "EN": "Weighing heavily on the senses or spirit; harsh or authoritarian.",
+      "TH": "กดขี่, อึดอัด"
+    },
+    "description": "Used to describe burdensome environments or governments."
   },
   {
     "word": "prickle",
     "type": "word",
-    "definition": "a small sharp point or a tingling sensation",
-    "description": "Used both for physical objects and sensations"
+    "definition": {
+      "EN": "A small sharp point or a tingling feeling.",
+      "TH": "ความรู้สึกเสียว, แหลมเล็กๆ"
+    },
+    "description": "Used for physical sensations or emotional discomfort."
   },
   {
     "word": "cider",
     "type": "word",
-    "definition": "a drink made from fermented apple juice",
-    "description": "Can be alcoholic or non-alcoholic depending on the region"
+    "definition": {
+      "EN": "An alcoholic drink made from fermented apple juice.",
+      "TH": "น้ำแอปเปิ้ลหมัก"
+    },
+    "description": "Mentioned when referring to beverages, especially in autumn or Western cultures."
   },
   {
     "word": "delusion",
     "type": "word",
-    "definition": "a false belief or opinion",
-    "description": "Often used in psychological or critical contexts"
+    "definition": {
+      "EN": "A belief that is not true; false idea.",
+      "TH": "ความหลงผิด"
+    },
+    "description": "Used in psychology or to describe someone out of touch with reality."
   },
   {
     "word": "discreetly",
     "type": "word",
-    "definition": "in a careful or unobtrusive manner",
-    "description": "Implies tact or caution in speech or actions"
+    "definition": {
+      "EN": "In a careful and private way to avoid notice.",
+      "TH": "อย่างสุขุม, อย่างระมัดระวัง"
+    },
+    "description": "Used when someone wants to avoid drawing attention."
   },
   {
     "word": "intimately",
     "type": "word",
-    "definition": "in a close, personal way",
-    "description": "Can refer to emotional closeness or detailed knowledge"
+    "definition": {
+      "EN": "In a very close or personal way.",
+      "TH": "อย่างลึกซึ้ง, อย่างใกล้ชิด"
+    },
+    "description": "Used to describe deep relationships or detailed understanding."
   },
   {
     "word": "whet",
     "type": "word",
-    "definition": "to sharpen or stimulate",
-    "description": "Often used metaphorically, as in 'whet the appetite'"
+    "definition": {
+      "EN": "To sharpen or stimulate (an appetite or desire).",
+      "TH": "กระตุ้น, ลับให้คม"
+    },
+    "description": "Often used in the expression 'whet the appetite' to mean increase interest."
   },
   {
     "word": "hefty",
     "type": "word",
-    "definition": "large, heavy, or powerful",
-    "description": "Can refer to physical size, cost, or effort"
+    "definition": {
+      "EN": "Large, heavy, and powerful.",
+      "TH": "ใหญ่มาก, หนักมาก"
+    },
+    "description": "Used to describe something physically heavy or metaphorically significant (e.g., hefty price)."
   },
   {
     "word": "dubious",
     "type": "word",
-    "definition": "hesitating or doubting",
-    "description": "Can also imply something questionable or suspicious"
+    "definition": {
+      "EN": "Hesitating or doubting; not to be relied upon.",
+      "TH": "น่าสงสัย, ไม่แน่ใจ"
+    },
+    "description": "Used when expressing uncertainty or lack of trust in something."
   },
   {
     "word": "interlocking",
     "type": "word",
-    "definition": "fit or connect together securely",
-    "description": "Used in both physical and abstract contexts like systems or ideas"
+    "definition": {
+      "EN": "Fitting or joined together tightly.",
+      "TH": "ที่เชื่อมโยงกัน"
+    },
+    "description": "Often used in mechanics, design, or systems where parts fit together."
   },
   {
     "word": "notion",
     "type": "word",
-    "definition": "a belief or idea",
-    "description": "Can range from vague impressions to firm beliefs"
+    "definition": {
+      "EN": "An idea, belief, or opinion.",
+      "TH": "แนวคิด, ความเห็น"
+    },
+    "description": "Used to refer to a general concept or idea, especially one not fully developed."
   },
   {
     "word": "momentarily",
     "type": "word",
-    "definition": "for a very short time",
-    "description": "Can also mean 'in a moment', depending on region"
+    "definition": {
+      "EN": "For a short time; in a moment.",
+      "TH": "ชั่วครู่, ในอีกไม่ช้า"
+    },
+    "description": "Used when something is expected to happen very soon or lasts briefly."
   },
   {
     "word": "hoax",
     "type": "word",
-    "definition": "a humorous or malicious deception",
-    "description": "Often used to describe false news or pranks"
+    "definition": {
+      "EN": "A trick or deception.",
+      "TH": "เรื่องหลอกลวง"
+    },
+    "description": "Used to describe something fake meant to deceive people."
   },
   {
     "word": "mull over",
     "type": "idiom",
-    "definition": "to think deeply about something",
-    "description": "Implies careful or prolonged consideration"
+    "definition": {
+      "EN": "To think about something deeply and carefully.",
+      "TH": "ใคร่ครวญ"
+    },
+    "description": "Used when making an important decision or considering options."
   },
   {
     "word": "exasperate",
     "type": "word",
-    "definition": "to irritate intensely",
-    "description": "Used when someone or something causes extreme annoyance"
+    "definition": {
+      "EN": "To irritate intensely; infuriate.",
+      "TH": "ทำให้โกรธ, ทำให้หงุดหงิด"
+    },
+    "description": "Used when someone is extremely annoyed by a person or situation."
   },
   {
     "word": "despondent",
     "type": "word",
-    "definition": "in low spirits from loss of hope",
-    "description": "Suggests deep sadness or discouragement"
+    "definition": {
+      "EN": "In low spirits due to loss of hope or courage.",
+      "TH": "หมดกำลังใจ"
+    },
+    "description": "Used to describe someone who feels hopeless or very discouraged."
   },
   {
     "word": "desperate",
     "type": "word",
-    "definition": "feeling or showing a hopeless sense of urgency",
-    "description": "Implies a need for extreme action or help"
+    "definition": {
+      "EN": "Feeling a hopeless sense that a situation is so bad it requires drastic action.",
+      "TH": "หมดหวัง, สิ้นหวัง"
+    },
+    "description": "Used when someone is willing to try anything due to urgency or fear."
   },
   {
     "word": "erratic",
     "type": "word",
-    "definition": "not regular or consistent",
-    "description": "Often used to describe unpredictable behavior or movement"
+    "definition": {
+      "EN": "Not even or regular in pattern or movement; unpredictable.",
+      "TH": "ไม่สม่ำเสมอ, ผันผวน"
+    },
+    "description": "Used when referring to behavior or events that are inconsistent or unreliable."
   },
   {
     "word": "endeavor",
     "type": "word",
-    "definition": "an attempt to achieve a goal",
-    "description": "Used in both formal and inspirational contexts"
+    "definition": {
+      "EN": "An attempt to achieve a goal.",
+      "TH": "ความพยายาม"
+    },
+    "description": "Used in formal contexts to describe serious efforts or undertakings."
   },
   {
     "word": "ashtray",
     "type": "word",
-    "definition": "a receptacle for cigarette or cigar ash",
-    "description": "Typically found in places where smoking is allowed"
+    "definition": {
+      "EN": "A container for cigarette or cigar ash.",
+      "TH": "ที่เขี่ยบุหรี่"
+    },
+    "description": "Used in contexts related to smoking or smoke areas."
   },
   {
     "word": "poverty",
     "type": "word",
-    "definition": "the state of being extremely poor",
-    "description": "Describes lack of financial or material resources"
+    "definition": {
+      "EN": "The state of being extremely poor.",
+      "TH": "ความยากจน"
+    },
+    "description": "Used in economic or social contexts to describe lack of financial resources."
   },
   {
     "word": "synopsis",
     "type": "word",
-    "definition": "a brief summary",
-    "description": "Often used in writing, films, or research"
+    "definition": {
+      "EN": "A brief summary of a larger work.",
+      "TH": "บทสรุปย่อ"
+    },
+    "description": "Used in film, literature, or presentation summaries."
   },
   {
     "word": "essence",
     "type": "word",
-    "definition": "the intrinsic nature or indispensable quality of something",
-    "description": "Used to express the core or most important aspect"
+    "definition": {
+      "EN": "The intrinsic nature or indispensable quality of something.",
+      "TH": "แก่นแท้, สาระสำคัญ"
+    },
+    "description": "Used when identifying the core nature of a concept or object."
   },
   {
     "word": "tranquility",
     "type": "word",
-    "definition": "a state of peace and calm",
-    "description": "Often used to describe serene environments or mental states"
+    "definition": {
+      "EN": "A state of peace and calm.",
+      "TH": "ความสงบเงียบ"
+    },
+    "description": "Often used to describe a peaceful environment or mental state."
   },
   {
     "word": "integrity",
     "type": "word",
-    "definition": "the quality of being honest and having strong moral principles",
-    "description": "Highly valued in personal and professional contexts"
+    "definition": {
+      "EN": "The quality of being honest and having strong moral principles.",
+      "TH": "ความซื่อสัตย์สุจริต"
+    },
+    "description": "Used in ethical contexts or to describe trustworthy people."
   },
   {
     "word": "undue",
     "type": "word",
-    "definition": "unwarranted or excessive",
-    "description": "Suggests something inappropriate or disproportionate"
+    "definition": {
+      "EN": "Unwarranted or excessive.",
+      "TH": "เกินควร, ไม่เหมาะสม"
+    },
+    "description": "Used to describe something inappropriate in amount or intensity."
   },
   {
     "word": "ratcheted up",
     "type": "idiom",
-    "definition": "increased something in steps or intensity",
-    "description": "Often used for pressure, costs, or emotions"
+    "definition": {
+      "EN": "Increased something, especially pressure or intensity, in stages.",
+      "TH": "เพิ่มขึ้นทีละน้อย"
+    },
+    "description": "Used to describe gradual escalation of actions or effects."
   },
   {
     "word": "imminent",
     "type": "word",
-    "definition": "about to happen",
-    "description": "Usually conveys urgency or threat"
+    "definition": {
+      "EN": "About to happen very soon.",
+      "TH": "ใกล้เข้ามา"
+    },
+    "description": "Used to describe events that are expected to occur shortly, often negative."
   },
   {
     "word": "tatter",
     "type": "word",
-    "definition": "a torn piece hanging from the main part",
-    "description": "Used to describe something worn or falling apart"
+    "definition": {
+      "EN": "A torn piece of cloth or paper.",
+      "TH": "เศษผ้า, ขาดเป็นชิ้น"
+    },
+    "description": "Used to describe something worn out or in ruins."
   },
   {
     "word": "splurge",
     "type": "word",
-    "definition": "to spend money freely or extravagantly",
-    "description": "Often implies treating oneself to luxury"
+    "definition": {
+      "EN": "To spend money freely or extravagantly.",
+      "TH": "ใช้จ่ายฟุ่มเฟือย"
+    },
+    "description": "Used when someone treats themselves by spending on luxury."
   },
   {
     "word": "bland",
     "type": "word",
-    "definition": "lacking strong features or characteristics",
-    "description": "Often used for food, people, or personalities"
+    "definition": {
+      "EN": "Lacking strong features or flavor; dull.",
+      "TH": "จืดชืด, ไม่น่าสนใจ"
+    },
+    "description": "Used to describe food, people, or experiences that lack excitement."
   },
   {
     "word": "primitive",
     "type": "word",
-    "definition": "relating to an early stage of development",
-    "description": "Can imply simplicity or lack of sophistication"
+    "definition": {
+      "EN": "Relating to an early stage of development; basic.",
+      "TH": "ดั้งเดิม, พื้นฐาน"
+    },
+    "description": "Used to describe early human history or unsophisticated tools or behavior."
   },
   {
     "word": "obnoxious",
     "type": "word",
-    "definition": "extremely unpleasant",
-    "description": "Describes someone or something offensive or annoying"
+    "definition": {
+      "EN": "Extremely unpleasant or offensive.",
+      "TH": "น่ารังเกียจ"
+    },
+    "description": "Used to describe people or things that are highly annoying or rude."
   },
   {
     "word": "clamor",
     "type": "word",
-    "definition": "a loud complaint or demand",
-    "description": "Often used to describe the public demanding something loudly"
+    "definition": {
+      "EN": "A loud and confused noise, especially by a crowd.",
+      "TH": "เสียงอึกทึก, การเรียกร้องเสียงดัง"
+    },
+    "description": "Used when describing protests or public outcry."
   },
   {
     "word": "solace",
     "type": "word",
-    "definition": "comfort in a time of distress",
-    "description": "Used to describe emotional support or consolation"
+    "definition": {
+      "EN": "Comfort in a time of distress.",
+      "TH": "ปลอบใจ, ความสบายใจ"
+    },
+    "description": "Used to describe emotional relief or consolation."
   },
   {
     "word": "gnaw",
     "type": "word",
-    "definition": "to bite or chew persistently",
-    "description": "Can also describe persistent worry or pain"
+    "definition": {
+      "EN": "To bite or chew persistently.",
+      "TH": "แทะ, กัดกิน"
+    },
+    "description": "Used literally or to describe worry that continually bothers someone."
   },
   {
     "word": "tipsy",
     "type": "word",
-    "definition": "slightly drunk",
-    "description": "Usually describes mild inebriation, often cheerfully"
+    "definition": {
+      "EN": "Slightly drunk.",
+      "TH": "มึนเล็กน้อย"
+    },
+    "description": "Used to describe someone who is mildly intoxicated, often cheerful."
   },
   {
     "word": "panacea",
     "type": "word",
-    "definition": "a solution for all problems",
-    "description": "Often used skeptically to describe unrealistic fixes"
+    "definition": {
+      "EN": "A solution or remedy for all difficulties or diseases.",
+      "TH": "ยาครอบจักรวาล, ทางแก้ปัญหาทุกอย่าง"
+    },
+    "description": "Used often in a skeptical tone to criticize overpromised solutions."
   },
   {
     "word": "knock it back",
     "type": "idiom",
-    "definition": "to drink something quickly",
-    "description": "Often refers to alcohol consumption"
+    "definition": {
+      "EN": "To drink something, especially alcohol, quickly.",
+      "TH": "ดื่มรวดเดียวหมด"
+    },
+    "description": "Used informally when someone quickly downs a drink."
   },
   {
     "word": "headlong",
     "type": "word",
-    "definition": "in a rush or without thinking",
-    "description": "Can describe actions taken impulsively or recklessly"
+    "definition": {
+      "EN": "With great speed or without thinking.",
+      "TH": "ผลีผลาม, เร่งรีบ"
+    },
+    "description": "Used to describe rushing into something without caution."
   },
   {
     "word": "wallow",
     "type": "word",
-    "definition": "to indulge in something excessively",
-    "description": "Often used with emotions like self-pity or grief"
+    "definition": {
+      "EN": "To indulge in an emotion or situation, especially negative, without trying to change it.",
+      "TH": "จมอยู่กับ (ความรู้สึก)"
+    },
+    "description": "Used when someone is absorbed in sadness, self-pity, or indulgence."
   },
   {
     "word": "verbatim",
     "type": "word",
-    "definition": "word for word",
-    "description": "Implies an exact repetition of words spoken or written"
+    "definition": {
+      "EN": "In exactly the same words as were used originally.",
+      "TH": "คำต่อคำ, ตามต้นฉบับ"
+    },
+    "description": "Used when quoting something word-for-word."
   },
   {
     "word": "semblance",
     "type": "word",
-    "definition": "an outward appearance that may not reflect reality",
-    "description": "Used to suggest something is not as it seems"
+    "definition": {
+      "EN": "The outward appearance of something, especially when the reality is different.",
+      "TH": "ลักษณะภายนอก, ความเหมือน"
+    },
+    "description": "Used when something appears a certain way but isn’t necessarily true."
   },
   {
     "word": "mundane",
     "type": "word",
-    "definition": "lacking interest or excitement; dull",
-    "description": "Describes ordinary or routine things"
+    "definition": {
+      "EN": "Lacking interest or excitement; dull.",
+      "TH": "น่าเบื่อ, ธรรมดา"
+    },
+    "description": "Used to describe daily tasks or experiences that are unremarkable."
   }
 ]

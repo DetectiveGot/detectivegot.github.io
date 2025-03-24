@@ -1,3 +1,7 @@
+import { vocabTem } from './vocabTem.js';
+
+const animateBaseClass = "animate__animated";
+const animateBounceDownClass = "animate__bounceInDown";
 const api = "./data/data.json";
 let wordList = [];
 
@@ -28,11 +32,16 @@ document.addEventListener("DOMContentLoaded", async function(){
     const instructionBtn = document.querySelector("#instruction-btn");
     const continueBtn = document.querySelector("#game-continue-btn");
     const scoreBoard = document.querySelector("#scoreboard");
-    // const scoreContainer = document.querySelector("#score-container");
+    const scoreContainer = document.querySelector("#score-container");
     const scoreMessage = document.querySelector("#score-message")
     const wordType = document.querySelector("#word-type");
     const wordDef = document.querySelector("#word-def");
     const wordDesc = document.querySelector("#word-desc");
+    const vocabBtn = document.querySelector("#vocab-list-btn");
+    const vocabPage = document.querySelector("#vocab-list-page");
+    const vocabCon = document.querySelector("#vocab-list-container");
+    const vocabOl = document.querySelector("#vocab-ol");
+    const navtitleBox = document.querySelector("#nav-title-box");
     //fetch data
     await loadWordList();
 
@@ -42,8 +51,9 @@ document.addEventListener("DOMContentLoaded", async function(){
     continueBtn.style.visibility = "hidden";
     instructionPage.style.visibility = "hidden";
     scoreBoard.style.visibility = "hidden";
+    vocabPage.style.visibility = "hidden";
 
-    let answer = "a".toLowerCase();
+    let answer = "";
     let lifeLeft = 5;
     let maxLife = 5;
     let letterLeft = 0;
@@ -56,8 +66,16 @@ document.addEventListener("DOMContentLoaded", async function(){
     let maxRound = 10;
     let curScore = 0;
 
+    //function to add class animation to element
+    function addElementClass(ele, _main){
+        ele.classList.add(_main);
+    }
+    //function to remove class animation to element
+    function removeElementClass(ele, _main){
+        ele.classList.remove(_main);
+    }
     // Scoreboard
-    scoreBoard.addEventListener("click", function(){
+    scoreContainer.addEventListener("click", function(){
         scoreBoard.style.visibility = "hidden";
     });
 
@@ -125,6 +143,9 @@ document.addEventListener("DOMContentLoaded", async function(){
             const index = parseInt(ch.getAttribute("index"));
             ch.style.color = "red";
             ch.textContent = wordAr[group][index];
+            removeElementClass(ch, animateBounceDownClass);
+            addElementClass(ch, animateBounceDownClass);
+            
         });
         // continueBtn.style.display = "block";
         continueBtn.style.visibility = "visible";
@@ -142,8 +163,10 @@ document.addEventListener("DOMContentLoaded", async function(){
     //when you win
     function winFucntion(){
         gameStarted = false;
-        letters.forEach(letter => {
-            letter.style.color = "green";
+        letters.forEach(ch => {
+            ch.style.color = "green";
+            removeElementClass(ch, animateBounceDownClass);
+            addElementClass(ch, animateBounceDownClass);
         });
         // continueBtn.style.display = "block";
         continueBtn.style.visibility = "visible";
@@ -177,11 +200,11 @@ document.addEventListener("DOMContentLoaded", async function(){
     //function restart the game (init values)
     function gameRestart(){
         //choose random word
-        const { word, type, definition, description } = wordList[Math.floor(Math.random() * wordList.length)];
+        const { word, type, definition: { EN, }, description } = wordList[Math.floor(Math.random() * wordList.length)];
         answer = word.toLowerCase().trim();
         
         wordType.textContent = type;
-        wordDef.textContent = definition;
+        wordDef.textContent = EN;
         wordDesc.textContent = description;
 
         //
@@ -201,6 +224,7 @@ document.addEventListener("DOMContentLoaded", async function(){
                 lettP.setAttribute("group", group);
                 lettP.setAttribute("index", i);
                 lettP.classList.add("letter");
+                addElementClass(lettP, animateBaseClass);
                 wordSpan.appendChild(lettP);
             }
             letterLeft+=len;
@@ -234,6 +258,7 @@ document.addEventListener("DOMContentLoaded", async function(){
                     ch.textContent = letter;
                     found = true;
                     letterLeft--;
+                    addElementClass(ch, animateBounceDownClass);
                 }
             });
             if(!found){
@@ -260,6 +285,7 @@ document.addEventListener("DOMContentLoaded", async function(){
                 ch.textContent = letter;
                 found = true;
                 letterLeft--;
+                addElementClass(ch, animateBounceDownClass);
             }
         });
         for (const btn of charBtn) {
@@ -276,4 +302,23 @@ document.addEventListener("DOMContentLoaded", async function(){
             winFucntion();
         }
     });
+    
+    wordList.forEach(({word, type, definition: { EN, TH }, description}) => {
+        const wordEle = vocabTem(word, type, EN, TH);
+        vocabOl.appendChild(wordEle);
+        
+    });
+
+    vocabBtn.addEventListener("click", function(){
+        vocabPage.style.visibility = "visible";
+    });
+
+    vocabCon.addEventListener("click", function(event){
+        vocabPage.style.visibility = "hidden";
+    });
+
+    navtitleBox.addEventListener("click", function(){
+        toMenu();
+    });
+
 });
