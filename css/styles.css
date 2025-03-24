@@ -183,6 +183,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: var(--elementMargin);
 }
 
 /* Start page */
